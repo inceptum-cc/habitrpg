@@ -134,8 +134,8 @@ api.cancelSubscription = async function cancelSubscription (data) {
 
   analytics.track('unsubscribe', {
     uuid: data.user._id,
-    gaCategory: 'commerce',
-    gaLabel: data.paymentMethod,
+    category: 'commerce',
+    label: data.paymentMethod,
     paymentMethod: data.paymentMethod,
   });
 };
